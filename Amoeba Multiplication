@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Amoeba
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt ();
+        System.out.println("Enter the number of months :");
+        int n1=0,n2=1,sum=0,i=2;
+      while(i<a)
+      {
+          sum=n1+n2;
+          n1=n2;
+          n2=sum;
+          i++;
+      }
+          System.out.println("The amoeba size is "+sum);
+        
+    }
+}
