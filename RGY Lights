@@ -1,0 +1,19 @@
+import java.util.*;
+public class Lights
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        float s=sc.nextFloat();
+        float d=sc.nextFloat();
+        float t=sc.nextFloat();
+        if(s>t)
+        {
+            System.out.println("Yes");
+        }
+        else
+        {
+            System.out.println("No");
+        }
+    }
+}
