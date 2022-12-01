@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Harshard
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int r=0,s=0,a1=0;
+        a1=a;
+        while(a>0)
+        {
+            r=a%10;
+            s=s+r;
+            a=a/10;
+        }
+        if(a1%s==0)
+        {
+            System.out.println("Harshad Number");
+        }
+        else
+        {
+            System.out.println("Not Harshad Number");
+        }
+    }
+}
